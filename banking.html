@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16">Let's get some <span class="text-sky-700">Mooooooooney!!!</span>
+        </h1>
+    </header>
+    <main class="w-3/4  mx-auto">
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4 ">
+                <div class="bg-yellow-300 p-8 rounded text-white">
+                    <h2 class="text-2xl">Deposit</h2>
+                    <h1 class="text-5xl">$<span id="deposit-total">00</span></h1>
+                </div>
+                <div class="bg-fuchsia-400 p-8 rounded text-white">
+                    <h2 class="text-2xl">Withdraw</h2>
+                    <h1 class="text-5xl">$<span id="withdraw-amount">00</span></h1>
+                </div>
+                <div class="bg-teal-300 p-8 rounded text-white">
+                    <h2 class="text-2xl">Balance</h2>
+                    <h1 class="text-5xl">$<span id="balance-adjustment">1240</span></h1>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="rounded bg-green-100 p-8">
+                    <h3 class="text-3xl py-2">Please Deposit</h3>
+                    <input class="p-1 rounded w-3/4" type="text" name="" id="deposit-money"
+                        placeholder="$ amount you want to deposit">
+                    <button id="deposit"
+                        class="bg-yellow-500 block my-2 px-6 py-2 text-2xl rounded text-white">Deposit</button>
+                </div>
+                <div class="rounded bg-red-100 p-8">
+                    <h3 class="text-3xl py-2">Please Withdraw</h3>
+                    <input class="p-1 rounded w-3/4" type="text" name="" id="withdraw-money"
+                        placeholder="$ amount you want to withdraw">
+                    <button id="withdraw"
+                        class="bg-yellow-500 block my-2 px-6 py-2 text-2xl rounded text-white">Withdraw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/functional-practice.js"></script>
+</body>
+
+</html>
